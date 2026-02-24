@@ -1,0 +1,40 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: compile part-a
+      id: compile-part-a
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: compile part-a
+        setup-command: ''
+        command: g++ -std=c++17 -Wall -Wextra -O2 -o part-a part-a/*.cpp
+        timeout: 10
+        max-score: 5
+    - name: compile part-b
+      id: compile-part-b
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: compile part-b
+        setup-command: ''
+        command: g++ -std=c++17 -Wall -Wextra -O2 -o part-b part-b/*.cpp
+        timeout: 10
+        max-score: 5
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        COMPILE-PART-A_RESULTS: "${{steps.compile-part-a.outputs.result}}"
+        COMPILE-PART-B_RESULTS: "${{steps.compile-part-b.outputs.result}}"
+      with:
+        runners: compile-part-a,compile-part-b
