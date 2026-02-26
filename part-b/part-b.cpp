@@ -22,7 +22,7 @@ void towerHanoi(int n, string start, string aux, string dest, int& moves) {
     
 }
 
-void printArrays(int* rod1, int top1, int* rod2, int top2, int* rod3, int top3, int size) {
+void printArrays(int* rod1, int top1, int* rod2, int top2, int* rod3, int top3) {
     cout << "Rod 1: ";
     for (int i = 0; i <= top1; i++)
         cout <<  rod1[i] << " ";
@@ -61,7 +61,7 @@ void arraysOfHanoi(int n, int* start, int* aux, int* dest, int& topRod1, int& to
     moveArrayDisc(start, dest, topRod1, topRod3, moves);
     
     // TODO: this is gonne print weird cause the rods are all flip flopped, also hard coded SIZE boooooo
-    printArrays(start, topRod1, aux, topRod2, dest, topRod3, 10);
+    printArrays(start, topRod1, aux, topRod2, dest, topRod3);
 
     arraysOfHanoi(n-1, aux, start, dest, topRod2, topRod1, topRod3, moves);
 }
