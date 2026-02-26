@@ -1,0 +1,244 @@
+PS C:\Projects\cs20-lpc\week-6-mon-lab-deemunny\part-b> .\part-b.exe
+----------------------------------------
+Trying n = 1
+
+Move# 1: Move disc 1 from Rod #1 to Rod #3
+
+Number of Moves = 1
+----------------------------------------
+Trying n = 2
+
+Move# 1: Move disc 1 from Rod #1 to Rod #2
+Move# 2: Move disc 2 from Rod #1 to Rod #3
+Move# 3: Move disc 1 from Rod #2 to Rod #3
+
+Number of Moves = 3
+----------------------------------------
+Trying n = 3
+
+Move# 1: Move disc 1 from Rod #1 to Rod #3
+Move# 2: Move disc 2 from Rod #1 to Rod #2
+Move# 3: Move disc 1 from Rod #3 to Rod #2
+Move# 4: Move disc 3 from Rod #1 to Rod #3
+Move# 5: Move disc 1 from Rod #2 to Rod #1
+Move# 6: Move disc 2 from Rod #2 to Rod #3
+Move# 7: Move disc 1 from Rod #1 to Rod #3
+
+Number of Moves = 7
+----------------------------------------
+Trying n = 4
+
+Move# 1: Move disc 1 from Rod #1 to Rod #2
+Move# 2: Move disc 2 from Rod #1 to Rod #3
+Move# 3: Move disc 1 from Rod #2 to Rod #3
+Move# 4: Move disc 3 from Rod #1 to Rod #2
+Move# 5: Move disc 1 from Rod #3 to Rod #1
+Move# 6: Move disc 2 from Rod #3 to Rod #2
+Move# 7: Move disc 1 from Rod #1 to Rod #2
+Move# 8: Move disc 4 from Rod #1 to Rod #3
+Move# 9: Move disc 1 from Rod #2 to Rod #3
+Move# 10: Move disc 2 from Rod #2 to Rod #1
+Move# 11: Move disc 1 from Rod #3 to Rod #1
+Move# 12: Move disc 3 from Rod #2 to Rod #3
+Move# 13: Move disc 1 from Rod #1 to Rod #2
+Move# 14: Move disc 2 from Rod #1 to Rod #3
+Move# 15: Move disc 1 from Rod #2 to Rod #3
+
+Number of Moves = 15
+----------------------------------------
+Trying n = 5
+
+Move# 1: Move disc 1 from Rod #1 to Rod #3
+Move# 2: Move disc 2 from Rod #1 to Rod #2
+Move# 3: Move disc 1 from Rod #3 to Rod #2
+Move# 4: Move disc 3 from Rod #1 to Rod #3
+Move# 5: Move disc 1 from Rod #2 to Rod #1
+Move# 6: Move disc 2 from Rod #2 to Rod #3
+Move# 7: Move disc 1 from Rod #1 to Rod #3
+Move# 8: Move disc 4 from Rod #1 to Rod #2
+Move# 9: Move disc 1 from Rod #3 to Rod #2
+Move# 10: Move disc 2 from Rod #3 to Rod #1
+Move# 11: Move disc 1 from Rod #2 to Rod #1
+Move# 12: Move disc 3 from Rod #3 to Rod #2
+Move# 13: Move disc 1 from Rod #1 to Rod #3
+Move# 14: Move disc 2 from Rod #1 to Rod #2
+Move# 15: Move disc 1 from Rod #3 to Rod #2
+Move# 16: Move disc 5 from Rod #1 to Rod #3
+Move# 17: Move disc 1 from Rod #2 to Rod #1
+Move# 18: Move disc 2 from Rod #2 to Rod #3
+Move# 19: Move disc 1 from Rod #1 to Rod #3
+Move# 20: Move disc 3 from Rod #2 to Rod #1
+Move# 21: Move disc 1 from Rod #3 to Rod #2
+Move# 22: Move disc 2 from Rod #3 to Rod #1
+Move# 23: Move disc 1 from Rod #2 to Rod #1
+Move# 24: Move disc 4 from Rod #2 to Rod #3
+Move# 25: Move disc 1 from Rod #1 to Rod #3
+Move# 26: Move disc 2 from Rod #1 to Rod #2
+Move# 27: Move disc 1 from Rod #3 to Rod #2
+Move# 28: Move disc 3 from Rod #1 to Rod #3
+Move# 29: Move disc 1 from Rod #2 to Rod #1
+Move# 30: Move disc 2 from Rod #2 to Rod #3
+Move# 31: Move disc 1 from Rod #1 to Rod #3
+
+Number of Moves = 31
+
+// i have a TODO to update my print function, it breaks part way through because the array pointers get all jumbled between recursive calls.
+
+Start Rod 1: 1 2 3 4 5
+Move# 1: Move disc 5
+Rod 1: 1 2 3 4
+Rod 2:
+Rod 3: 5
+------------------------
+Move# 2: Move disc 4
+Rod 1: 1 2 3
+Rod 2: 5
+Rod 3: 4
+------------------------
+Move# 3: Move disc 5
+Rod 1:
+Rod 2: 1 2 3
+Rod 3: 4 5
+------------------------
+Move# 4: Move disc 3
+Rod 1: 1 2
+Rod 2: 4 5
+Rod 3: 3
+------------------------
+Move# 5: Move disc 5
+Rod 1: 4
+Rod 2: 3
+Rod 3: 1 2 5
+------------------------
+Move# 6: Move disc 4
+Rod 1:
+Rod 2: 1 2 5
+Rod 3: 3 4
+------------------------
+Move# 7: Move disc 5
+Rod 1: 1 2
+Rod 2:
+Rod 3: 3 4 5
+------------------------
+Move# 8: Move disc 2
+Rod 1: 1
+Rod 2: 3 4 5
+Rod 3: 2
+------------------------
+Move# 9: Move disc 5
+Rod 1: 3 4
+Rod 2: 1
+Rod 3: 2 5
+------------------------
+Move# 10: Move disc 4
+Rod 1: 3
+Rod 2: 2 5
+Rod 3: 1 4
+------------------------
+Move# 11: Move disc 5
+Rod 1: 2
+Rod 2: 3
+Rod 3: 1 4 5
+------------------------
+Move# 12: Move disc 3
+Rod 1:
+Rod 2: 1 4 5
+Rod 3: 2 3
+------------------------
+Move# 13: Move disc 5
+Rod 1: 1 4
+Rod 2: 2 3
+Rod 3: 5
+------------------------
+Move# 14: Move disc 4
+Rod 1: 1
+Rod 2: 5
+Rod 3: 2 3 4
+------------------------
+Move# 15: Move disc 5
+Rod 1:
+Rod 2: 1
+Rod 3: 2 3 4 5
+------------------------
+Move# 16: Move disc 1
+Rod 1:
+Rod 2: 2 3 4 5 
+Rod 3: 1
+------------------------
+Move# 17: Move disc 5
+Rod 1: 2 3 4
+Rod 2: 1
+Rod 3: 5
+------------------------
+Move# 18: Move disc 4
+Rod 1: 2 3
+Rod 2: 5
+Rod 3: 1 4
+------------------------
+Move# 19: Move disc 5
+Rod 1:
+Rod 2: 2 3
+Rod 3: 1 4 5
+------------------------
+Move# 20: Move disc 3
+Rod 1: 2
+Rod 2: 1 4 5
+Rod 3: 3
+------------------------
+Move# 21: Move disc 5
+Rod 1: 1 4
+Rod 2: 3
+Rod 3: 2 5
+------------------------
+Move# 22: Move disc 4
+Rod 1: 1
+Rod 2: 2 5
+Rod 3: 3 4
+------------------------
+Move# 23: Move disc 5
+Rod 1: 2
+Rod 2: 1
+Rod 3: 3 4 5
+------------------------
+Move# 24: Move disc 2
+Rod 1:
+Rod 2: 3 4 5
+Rod 3: 1 2
+------------------------
+Move# 25: Move disc 5
+Rod 1: 3 4
+Rod 2:
+Rod 3: 1 2 5
+------------------------
+Move# 26: Move disc 4
+Rod 1: 3
+Rod 2: 1 2 5
+Rod 3: 4
+------------------------
+Move# 27: Move disc 5
+Rod 1: 1 2
+Rod 2: 3
+Rod 3: 4 5
+------------------------
+Move# 28: Move disc 3
+Rod 1:
+Rod 2: 4 5
+Rod 3: 1 2 3
+------------------------
+Move# 29: Move disc 5
+Rod 1: 4
+Rod 2: 1 2 3
+Rod 3: 5
+------------------------
+Move# 30: Move disc 4
+Rod 1:
+Rod 2: 5
+Rod 3: 1 2 3 4
+------------------------
+Move# 31: Move disc 5
+Rod 1:
+Rod 2:
+Rod 3: 1 2 3 4 5
+------------------------
+Final Rod 3: 1 2 3 4 5
+PS C:\Projects\cs20-lpc\week-6-mon-lab-deemunny\part-b>
